@@ -1,0 +1,10 @@
+<!--pages/myscorebook/myscorebook.wxml-->
+<view class="historylist" wx:for="{{scorenovel}}" wx:key="score_id">
+  <view class="historyitem">
+    <image src="{{item.novel_cover}}"></image>
+    <view class="detail">
+      <view class="title">{{item.novel_title}}</view>
+      <view class="time">我的评分：{{item.score}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,55 @@
+/* pages/search/search.wxss */
+/* 搜索区域 */
+/* .search{
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 10rpx 10rpx 30rpx;
+} */
+.head{
+  display: flex;
+  height: 65rpx;
+  margin: 10rpx 10rpx 15rpx;
+}
+.search{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 35rpx;
+  height: 65rpx;
+  border-radius: 15rpx;
+  background: rgba(216, 215, 215, 0.3);
+}
+.search image{
+  margin-left: 5rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.search input{
+  flex: 1;
+  background: rgba(237, 237 ,237 , 0.3);
+  margin: 10rpx;
+}
+.canel{
+  width: 100rpx;
+  text-align: center;
+}
+/* 搜索展示 */
+.searchlist{
+  margin-bottom: 10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.searchlist image{
+  margin-left: 5rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.content{
+  flex:1;
+  margin-left: 20rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 30rpx;
+}

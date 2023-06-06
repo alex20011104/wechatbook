@@ -1,0 +1,12 @@
+<view class="book-item" wx:for="{{booklist}}" wx:key="">
+  <view class="img1">
+    <image src="{{item.cover}}"></image>
+  </view>
+  <view class="info">
+    <text class="title">{{item.novel_title}}</text>
+    <text class="txt">{{item.author}}</text>
+    <text class="txt">{{item.category}}</text>
+    <text class="txt">{{item.description}}</text>
+    
+  </view>
+</view>

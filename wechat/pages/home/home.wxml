@@ -1,0 +1,47 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class=search">
+    <image class="img" src="../../img/搜索.png"></image>
+    <input  placeholder="小说搜索" bindtap="gotosearch"/>
+    <image class="book"  src="../../img/书籍.png"></image>
+  </view>
+<!-- 轮播图 -->
+  <swiper  class="banners" 	indicator-dots 	indicator-color="ivory" indicator-active-color="#d43c33">
+    <swiper-item wx:for="{{cover_list}}">
+      <image src="{{item.cover_link}}"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 导航区域 -->
+  <view class="navContainer">
+    <navigator url="/pages/recommend/recommend" class="navItem">
+        <image src="../../img/推荐.png" class="iconfont"></image>
+        <text class="font">小说推荐</text>
+    </navigator>
+    <navigator url="/pages/category/category" class="navItem">
+      <image src="../../img/分类.png" class="iconfont"></image>
+      <text class="font">分类</text>
+    </navigator>
+    <navigator url="/pages/bookrank/bookrank" class="navItem">
+      <image src="../../img/排名.png" class="iconfont"></image>
+      <text class="font">排名</text>
+    </navigator>
+    <navigator url="/pages/bookcity/bookcity" class="navItem">
+      <image src="../../img/全部.png" class="iconfont"></image>
+      <text class="font">全部</text>
+    </navigator>
+  </view>
+  <!-- 新书推荐 -->
+  <view class="header">
+    <text class="title">新书推荐</text>
+  </view>
+<!-- 书籍列表 -->
+  <view class="booklist" >
+    <navigator class="book" wx:for="{{booklist}}" wx:key="id" url="/pages/book_detail/book_detail?id={{item.novel_id}}"> 
+      <image src="{{ item.cover ? item.cover : '../../img/none.webp' }}"></image>
+      <text class="name">{{item.novel_title}}</text>
+      <text class="author">{{item.author}}</text>
+    </navigator>
+  </view>
+</view>
+
+

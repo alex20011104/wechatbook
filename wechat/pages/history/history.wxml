@@ -1,0 +1,12 @@
+<view class="historylist" wx:for="{{historylist}}">
+  <navigator  url="/pages/book_detail/book_detail?id={{item.novel_id}}">
+      <view class="historyitem">
+        <image src="{{item.novel_cover}}"></image>
+        <view class="detail">
+          <view class="title">{{item.novel_title}}</view>
+          <view class="chapter">最近阅读：{{item.lastchapter_name}}</view>
+          <view class="time">{{item.history_time}}</view>
+        </view>
+      </view>
+  </navigator>
+</view>

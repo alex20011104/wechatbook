@@ -1,0 +1,64 @@
+<view class="book">
+
+  <!-- 小说详情 -->
+  <view class="first">
+    <view class="detail">
+       <!-- 小说图片 -->
+      <image src="{{ booklist.cover ? booklist.cover : '../../img/none.webp' }}"></image>
+      <!-- 小说信息 -->
+      <view class="message">
+        <view class="message_item">{{booklist.novel_title}}</view>
+        <view class="message_item">{{booklist.author}}</view>
+        <view class="message_item">{{booklist.category}}</view>
+        <view class="message_item">{{booklist.state}}</view>
+      </view>
+    </view>
+   
+    <view class="gradelist">
+      <text class="grade">综合评分：{{grade}}</text>
+      <text class="grade">我的评分：{{mygrade}}</text>
+    </view>
+  </view>
+
+  <!-- 评分按钮区 -->
+  <view class='btnGroup'>
+    <button class="{{favorite==1 ? 'yellow':'btn'}}"  bindtap="favorite">
+      收藏
+    </button>
+    <button class="btn" bindtap="read">
+      立即阅读
+    </button>
+    <button class="btn" bindtap="score">
+      评分
+    </button>
+  </view>
+
+  <!-- 小说简介区 -->
+  <view class="introduce">
+    <text>简介：</text>
+    <text>{{booklist.description}}</text>
+  </view>
+
+  <!-- 小说目录区 -->
+  <navigator class="chapter" url="/pages/book_detail/chapter/chapter?id={{novel_id}}">目录</navigator>
+
+  <!-- 评论区 -->
+  <view class="commentlist">
+    <view class="commentheader">评论区：</view>
+    <view class="commentlist-1" wx:for="{{comment_list}}" wx:key="comment_id">
+      <view class="title">
+        <view class="id">{{item.username}}</view>
+        <view class="time">{{item.created_time}}</view>
+      </view>
+      <view class="comment">{{item.comment_content}}</view>
+    </view>
+  </view>
+  <view class="comment-input" wx:if="{{!scorebtn}}">
+    <input class="input-box" placeholder="请输入评论内容" value="{{inputValue}}" bindinput="onInputChange" id="inputValue"/>
+    <view class="submit-btn" bindtap="onSubmit">提交</view>
+  </view>
+  <view class="comment-input" wx:if="{{scorebtn}}">
+    <input class="input-box" placeholder="请输入1-10整数评分" value="{{score}}" bindinput="onInputChange" id="score"/>
+    <view class="submit-btn" bindtap="onScore">评分</view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+/* pages/bookrank/bookrank.wxss */
+/* pages/history/history.wxss */
+.historylist{
+  margin: 40rpx 30rpx;
+}
+.historyitem{
+  display: flex;
+}
+.historyitem image{
+  width: 140rpx;
+  height: 183rpx;
+  border-radius: 10rpx; 
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20rpx;
+  width: 300rpx;
+}
+.historyitem .title{
+  margin-bottom: 8rpx;
+  font-style:unset ;
+  font-weight: 700;
+  font-size: 32rpx;
+}
+.historyitem .chapter{
+  margin-bottom: 8rpx;
+  font-style:unset ;
+  font-size: 30rpx;
+}
+.historyitem .time{
+  font-size: 30rpx;
+  color: #666;
+}
+.score{
+  margin-left: auto;
+  font-size: 42rpx;
+  color: rgb(255, 187, 0);
+}

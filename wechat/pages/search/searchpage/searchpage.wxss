@@ -1,0 +1,38 @@
+/* pages/bookcity/bookcity.wxss */
+/* 我来组成头部 */
+.header{
+  font-size: 35rpx;
+  color: #666;
+}
+
+.book-item{
+  height: 250rpx;
+  display: flex;
+  margin: 10rpx;
+  padding: 10rpx;
+  border: 1rpx solid #efefef;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+  background-color: rgb(243, 236, 228);
+}
+.img1 image{
+  width: 180rpx;
+  height: 250rpx;
+  margin-right: 10px;
+  background-color: pink;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 24rpx;
+  flex: 1;
+  overflow: hidden;
+  
+}
+.txt{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+

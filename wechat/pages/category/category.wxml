@@ -1,0 +1,19 @@
+<view>
+  <scroll-view scroll-x class="navScroll" enable-flex>
+    <view class="navItem" wx:for="{{categorylist}}" wx:key="category_id">
+      <view class="nacContent {{navId==item.category_id?'active':''}}" bindtap="changeNav" id="{{item.category_id}}"> {{item.category_name}} </view>
+    </view>
+  </scroll-view>
+
+  <view class="book-item" wx:for="{{novellist}}" wx:key="">
+    <view class="img1">
+      <image src="{{item.cover}}"></image>
+    </view>
+    <view class="info">
+      <text class="title">{{item.novel_title}}</text>
+      <text class="txt">作者：{{item.author}}</text>
+      <text class="txt">类型：{{item.category}}</text>
+      <text class="txt">简介：{{item.description}}</text>
+    </view>
+  </view>
+</view>

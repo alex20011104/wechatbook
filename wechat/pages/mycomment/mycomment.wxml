@@ -1,0 +1,12 @@
+<view class="commentlist" wx:for="{{commentlist}}" wx:key="comment_id">
+  <view class="head">
+    <image src="../../img/自由之翼.jpg"></image>
+    <view>
+      <view class="name">{{item.username}}</view>
+      <view class="time">{{item.created_time}}</view>
+    </view>
+    <view class="delete" bindtap="delete" id="{{item.comment_id}}"> <image src="../../img/删除.png"></image></view>
+  </view>
+
+  <view class="content">{{item.comment_content}}</view>
+</view>

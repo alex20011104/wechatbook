@@ -1,0 +1,9 @@
+<!--pages/mail/mail.wxml-->
+<view class="commentlist" wx:for="{{mail_list}}" wx:key="mail_id">
+  <view class="head">  
+    <view>
+      <view class="time">{{item.mail_time}}</view>
+      <view class="content">{{item.content}}</view>
+    </view>
+  </view>
+</view>

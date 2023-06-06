@@ -1,0 +1,48 @@
+page{
+  background-color: #F4F4F4;
+}
+.my-container{
+  height: 100%;
+  background-color: #F4F4F4;
+}
+.my-container .top-box{
+  display: flex;
+  height: 400rpx;
+  background-color: rgb(247, 92, 92);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.my-container .top-box .avatar{
+  height: 90px;
+  width: 90px;
+  border-radius: 45px;
+  border: 2px solid white;
+  box-shadow: 0 1px 5px black;
+}
+.my-container .top-box .nickname{
+  font-size: 16px;
+  color: white;
+  font-weight: 10px;
+  margin-top: 10px;
+}
+.my-container .list-panel{
+  padding: 0 10px;
+  position: relative;
+  top: -10px;
+}
+.my-container .list-panel .panel{
+  height: 80rpx;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.my-container .list-panel .panel image{
+  width: 80rpx;
+  height: 60rpx;
+}

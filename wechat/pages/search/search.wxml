@@ -1,0 +1,18 @@
+<!--pages/search/search.wxml-->
+<!-- 搜索框 -->
+<view class="head">
+  <view class="search">
+    <image src="../../img/搜索.png"></image>
+    <input  placeholder="小说搜索" bindinput="handleinput"/>
+  </view>
+  <navigator class="canel" url="/pages/search/searchpage/searchpage?id={{input}}" >搜索</navigator>
+</view>
+
+<!-- 搜索内容展示 -->
+<view class="searchshow">
+  <view class="searchlist" wx:for="{{novel_list}}" wx:key="novel_id">
+    <image src="../../img/搜索.png"></image>
+    <navigator class="content" url="/pages/book_detail/book_detail?id={{item.novel_id}}">{{item.novel_title}}</navigator>
+  </view>
+</view>
+<!-- 搜索结果展示 -->

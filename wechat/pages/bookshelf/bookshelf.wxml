@@ -1,0 +1,17 @@
+<!--pages/bookshelf/bookshelf.wxml-->
+<!-- 书籍列表 -->
+<view class="content">
+  <view class="booklist">
+    <navigator class="book" wx:for="{{booklist}}" wx:key="id" url="/pages/book_detail/book_detail?id={{item.novel_id}}">
+      <image src="{{ item.cover ? item.cover : '../../img/none.webp' }}"></image>
+      <text class="name">{{item.novel_title}}</text>
+    </navigator>
+
+    <view class="add" url="/pages/home/home" bindtap="gotohome">
+      <image src="../../img/添加.png"></image>
+      <text>去找书</text>
+    </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,51 @@
+page {
+  background-color: rgb(243, 236, 236); /* 您可以使用您喜欢的颜色，这里以 #f0f0f0 为例 */
+}
+
+.content{
+  margin-top: 100rpx;
+  height: 100%;
+}
+.booklist{
+   
+  display: flex;
+  flex-wrap: wrap;
+}
+.book{
+  width: 160rpx;
+  height: 280rpx;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin:0 45rpx 10rpx;
+}
+.book image{
+  width: 160rpx;
+  height: 210rpx;
+  border-radius: 10rpx;
+}
+.book .name{
+  margin-top: 5rpx;
+ font-size: 28rpx;
+ color: #000;
+ font-weight: bold;
+}
+.add{
+  width: 68px;
+  height: 89px;
+  border-radius: 10px;
+  background-color: #d4cece;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0 45rpx;
+}
+.add image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.add text{
+  font-size: 30rpx;
+  color: #666;
+}

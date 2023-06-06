@@ -1,0 +1,33 @@
+<!--pages/signup/signup.wxml-->
+<view class="userInfo-container">
+  
+  <view class="split-text">基本信息</view>
+  <view class="section">
+    <view class="section-title">用户ID</view>
+    <input name="input" placeholder="请输入用户ID" id="user_id" bindinput="userInput" />
+  </view>
+
+  <view class="section">
+    <view class="section-title">密码</view>
+    <input name="input" placeholder="请输入密码" id="password" bindinput="userInput" />
+  </view>
+
+  <view class="split-text">可选信息</view>
+  <view class="section">
+    <view class="section-title">用户名</view>
+    <input name="input" placeholder="请输入自己的用户名" id="username" bindinput="userInput" />
+  </view>
+  <view class="section">
+    <view class="section-title">年龄</view>
+    <input name="input" placeholder="请输入年龄" id="age" bindinput="userInput" />
+  </view>
+
+  <view class="section">
+    <view class="section-title">性别</view>
+    <input name="input" placeholder="请输入性别" id="gender" bindinput="userInput" />
+  </view>
+
+  <view class="btn-area">
+    <button bindtap="submit" >注册</button>
+  </view>
+</view>

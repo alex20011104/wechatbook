@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/updateuser/updateuser",
+    "pages/bookcity/bookcity",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/book_detail/book_detail",
+    "pages/book_detail/chapter/chapter",
+    "pages/content/content",
+    "pages/search/search",
+    "pages/search/searchpage/searchpage",
+    "pages/login/signup/signup",
+    "pages/bookshelf/bookshelf",
+    "pages/mycomment/mycomment",
+    "pages/category/category",
+    "pages/history/history",
+    "pages/bookrank/bookrank",
+    "pages/myscorebook/myscorebook",
+    "pages/recommend/recommend",
+    "pages/mail/mail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FD9941",
+    "navigationBarTitleText": "小说阅读",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef"
+  },
+  "tabBar": {
+    "color": "#676767",
+    "selectedColor": "#fd9941",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "img/首页.png",
+        "selectedIconPath": "img/首页.png",
+        "text": "书城"
+      },
+      {
+        "pagePath":  "pages/bookshelf/bookshelf",
+        "iconPath": "img/书架.png",
+        "selectedIconPath": "img/书架.png",
+        "text": "书架"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "img/我的.png",
+        "selectedIconPath": "img/我的.png",
+        "text": "我的"
+      }
+      
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "my-test1": "/components/test/test"
+  }
+}

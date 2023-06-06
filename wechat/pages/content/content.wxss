@@ -1,0 +1,118 @@
+/* pages/content/content.wxss */
+.content-text {
+  position: relative;
+  top: 0rpx;
+  white-space: pre-wrap; /* 保留文本中的换行和空格 */
+  line-height: 1.5;       /* 设置行高 */
+}
+ .title{
+  display: flex;
+  justify-content: center;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70rpx;
+  background-color: #f0f0f0;
+  margin-bottom: 10rpx;
+}
+.btn{
+  margin: 0 20rpx;
+}
+/* 字体选择 */
+.options {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh; /* 占据屏幕一半的高度 */
+  background-color: #ffffff;
+  z-index: 9999;
+}
+
+
+
+.option-item {
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding: 10px;
+  font-size: 16px;
+  color: rgb(170, 150, 124);
+  text-align: center;
+  border-bottom: 1px solid #e6dd68;
+}
+.a{
+  padding-left: 40rpx;
+  color: rgb(170, 150, 124);
+}
+.selected{
+  border: rgb(230, 181, 23) solid 2px;
+  border-radius: 20rpx;
+}
+.item{
+  width: 23%;
+}
+.yahei {
+  font-family: "微软雅黑";
+}
+
+.songti {
+  font-family: "宋体";
+}
+.cursive {
+  font-family: cursive;
+}
+.fantasy{
+  font-family:fantasy;
+}
+.lishu{
+  font-family:"隶书";
+}
+.coloritem1{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: rgb(231,224,198); 
+  margin: 0 10rpx;
+}
+
+.color1{
+  background-color: rgb(231,224,198); 
+}
+
+.coloritem2{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: rgb(226,203,173); 
+  margin: 0 10rpx;
+}
+
+.color2{
+  background-color: rgb(226.203.173); 
+}
+.coloritem3{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: rgb(227, 237, 205); 
+  margin: 0 10rpx;
+}
+
+.color3{
+  background-color: rgb(227, 237, 205); 
+}
+
+.coloritem4{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: rgb(220, 226, 241); 
+  margin: 0 10rpx;
+}
+
+.color4{
+  background-color: rgb(220, 226, 241); 
+}

@@ -1,0 +1,12 @@
+<view class="header">搜索结果：</view>
+<view class="book-item" wx:for="{{booklist}}" wx:key="">
+  <view class="img1">
+    <image src="{{item.cover}}"></image>
+  </view>
+  <navigator class="info" url="/pages/book_detail/book_detail?id={{item.novel_id}}">
+    <text class="txt">{{item.novel_title}}</text>
+    <text class="txt">{{item.author}}</text>
+    <text class="txt">{{item.category}}</text>
+    <text class="txt">{{item.description}}</text>
+  </navigator>
+</view>

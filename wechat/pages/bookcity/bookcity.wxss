@@ -1,0 +1,55 @@
+/* pages/bookcity/bookcity.wxss */
+.book-item{
+  height: 250rpx;
+  display: flex;
+  margin: 20rpx;
+  padding: 10rpx;
+  border: 1rpx solid #faf7f7;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+  background-color: rgb(252, 250, 247);
+}
+.img1 image{
+  width: 180rpx;
+  height: 250rpx;
+  margin-right: 10px;
+  background-color: pink;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 28rpx;
+  flex: 1;
+  overflow: hidden;
+  
+}
+.title{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.txt{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+
+
+
+/* .book-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+  
+  .img1 {
+  width: 100px;
+  height: 140px;
+  margin-right: 20px;
+  background-color: #ccc; /* 添加一个背景色，方便查看布局 */
+  /* }
+  
+  .info {
+  flex: 1;
+  margin-left: 20px;
+  } */ 

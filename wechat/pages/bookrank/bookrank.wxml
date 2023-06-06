@@ -1,0 +1,13 @@
+<view class="historylist" wx:for="{{novelrank}}">
+  <navigator url="/pages/book_detail/book_detail?id={{item.novel_id}}">
+    <view class="historyitem">
+      <image src="{{item.novel_cover}}"></image>
+      <view class="detail">
+        <view class="title">{{item.novel_title}}</view>
+        <view class="chapter">{{item.author}}</view>
+        <view class="time">{{item.category}}</view>
+      </view>
+      <view class="score">评分：{{item.score}}</view>
+    </view>
+</navigator>
+</view>

@@ -1,0 +1,59 @@
+<!-- <view class="content">
+  <view class="head">
+    <view class="btn" bindtap="gotohome"> 首页 </view>
+    <navigator class="btn" url="/pages/content/content?id={{chapter_id-1}}"> 上一章 </navigator>
+    <navigator class="btn" url="/pages/book_detail/chapter/chapter?id={{novel_id}}"> 目录 </navigator>
+    <view class="btn" bindtap="next"> 下一章 </view>
+  </view>
+  <view class="title">   
+    <view>{{chapter_title}}</view>
+  </view>
+  <text class="content-text">{{content}}</text>
+
+  <view class="head">
+    <view class="btn" bindtap="gotohome"> 首页 </view>
+    <navigator class="btn" url="/pages/content/content?id={{chapter_id-1}}"> 上一章 </navigator>
+    <navigator class="btn" url="/pages/book_detail/chapter/chapter?id={{novel_id}}"> 目录 </navigator>
+    <view class="btn" bindtap="next"> 下一章 </view>
+  </view>
+</view> -->
+<view class="content {{color}}" bind:longpress="showOptions">
+  <view class="head">
+    <view class="btn" bindtap="gotohome"> 首页 </view>
+    <navigator class="btn" url="/pages/content/content?id={{chapter_id-1}}"> 上一章 </navigator>
+    <navigator class="btn" url="/pages/book_detail/chapter/chapter?id={{novel_id}}"> 目录 </navigator>
+    <view class="btn" bindtap="next"> 下一章 </view>
+  </view>
+  <view class="title">
+    <view>{{chapter_title}}</view>
+  </view>
+  <text class="content-text {{font}}">{{content}}</text>
+
+  <view class="head">
+    <view class="btn" bindtap="gotohome"> 首页 </view>
+    <navigator class="btn" url="/pages/content/content?id={{chapter_id-1}}"> 上一章 </navigator>
+    <navigator class="btn" url="/pages/book_detail/chapter/chapter?id={{novel_id}}"> 目录 </navigator>
+    <view class="btn" bindtap="next"> 下一章 </view>
+  </view>
+
+  <!-- 选择字体和背景颜色的弹出框 -->
+  <view class="options" wx:if="{{showOptions}}">
+    <view class="a">字体选择：</view>
+    <view class="option-item">
+      <view id="yahei" bindtap="changeFont" class="{{font == 'yahei' ? 'selected' : ''}} item">微软雅黑</view>
+      <view id="songti" bindtap="changeFont" class="{{font == 'songti' ? 'selected' : ''}} item">宋体</view>
+      <view id="cursive" bindtap="changeFont" class="{{font == 'cursive' ? 'selected' : ''}} item">草书</view>
+      <view id="fantasy" bindtap="changeFont" class="{{font == 'fantasy' ? 'selected' : ''}} item">奇幻</view>
+      <view id="lishu" bindtap="changeFont" class="{{font == 'lishu' ? 'selected' : ''}} item">隶书</view>
+    </view>
+
+    
+    <view class="option-item" >
+      <view>背景颜色:</view>
+      <view id="color1" bindtap="changeBackground" class="{{color == 'color1' ? 'selected' : ''}} coloritem1 "></view>
+      <view id="color2" bindtap="changeBackground" class="{{color == 'color2' ? 'selected' : ''}} coloritem2 "></view>
+      <view id="color3" bindtap="changeBackground" class="{{color == 'color3' ? 'selected' : ''}} coloritem3 "></view>
+      <view id="color4" bindtap="changeBackground" class="{{color == 'color4' ? 'selected' : ''}} coloritem4 "></view>
+    </view>
+  </view>
+</view>

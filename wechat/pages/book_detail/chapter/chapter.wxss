@@ -1,0 +1,5 @@
+/* pages/book_detail/chapter/chapter.wxss */
+.chapter{
+  margin: 50rpx 20rpx;
+  font-size: 38rpx;
+}

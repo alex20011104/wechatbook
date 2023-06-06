@@ -1,0 +1,3 @@
+<view class="chapter" wx:for="{{chapterlist}}" >
+  <navigator url="/pages/content/content?id={{item.chapter_id}}">{{item.chapter_title}}</navigator>
+</view>
